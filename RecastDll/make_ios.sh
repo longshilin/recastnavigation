@@ -14,6 +14,6 @@ exist_arm64=`lipo -info build_ios/Release-iphoneos/libRecastDll.a | grep arm64 |
 if [ $[exist_arm64] -eq 0 ]; then
 	echo "** ERROR ** : No support for arm64, maybe XCode version is to high, use manual_build_ios instead!"
 else
-	cp build_ios/Release-iphoneos/libRecastDll.a Plugins/iOS/libRecastDll.a
-    rm -rf build_io
+    cp build_ios/Release-iphoneos/libRecastDll.a Plugins/iOS/libRecastDll.a
+    rm -rf build_ios
 fi
